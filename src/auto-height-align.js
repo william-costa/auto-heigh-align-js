@@ -30,7 +30,7 @@
    //SET GROUPS
    $('.autoHeightAlign').each(function(e){
      var group = $(this).data('height-group');
-     var height = this.clientHeight;
+     var height = $(this).outerHeight();
 
      //CLASSE DO GRUPO
      $(this).addClass('autoHeightAlign-'+group);
