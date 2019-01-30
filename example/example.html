@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Auto Height Align</title>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <script src="../src/auto-height-align.js"></script>
+
+  <script>
+    $(document).on('click','.execHeightAlign',function(e){
+      autoHeightAlign();
+    });
+  </script>
+
+  <style>
+
+    .separador{
+      clear:both;
+      padding-top:20px;
+      padding-bottom:20px;
+    }
+
+    .box{
+      width:100px;
+      float:left;
+      margin-right:10px;
+    }
+
+    .box1{
+      background-color:blue;
+    }
+
+    .box2{
+      background-color:red;
+    }
+
+    .box3{
+      background-color:green;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<button class="execHeightAlign">Height Align</button>
+  
+<div class="autoHeightAlign box box1" data-height-group="line1">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div> 
+
+<div class="autoHeightAlign box box2" data-height-group="line1">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div> 
+
+<div class="autoHeightAlign box box3" data-height-group="line1">
+  <br>
+  <br>
+  <br>
+</div> 
+
+
+<div class="separador">
+<hr>
+</div>
+
+<div class="autoHeightAlign box box1" data-height-group="line2">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div> 
+
+<div class="autoHeightAlign box box2" data-height-group="line2">
+  <br>
+  <br>
+  <br>
+  <br>
+</div> 
+
+<div class="autoHeightAlign box box3" data-height-group="line2">
+  <br>
+  <br>
+  <br>
+</div> 
+
+
+</body>
+</html>
